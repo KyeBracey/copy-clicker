@@ -5,11 +5,19 @@
     <title>Copy Clicker</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="game.js"></script>
+    <script type="text/javascript">
+      const onload = () => {
+        window.game = new Game();
+        game.init();
+      }
+
+      window.onload = onload;
+    </script>
   </head>
   <body>
     <div class="root">
-      <div>Nothing to see here... yet</div>
-      <div>Coming soon: All the cookies (in exchange for all your free time)!</div>
+      <div id="cookiesDisplay"></div>
+      <div id="bigCookie">I'm a big cookie - click me!</div>
     </div>
   </body>
 </html>
